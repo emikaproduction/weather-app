@@ -12,13 +12,15 @@ const endpoints = {
 export default class Weather extends React.Component {
   constructor(props) {
     super(props);
+    this.getWeather = this.getWeather.bind(this);
 
     this.state = {
       places: [],
       names: []
     };
   }
-  componentDidMount() {
+
+  getWeather() {
     fetch(API_URL + endpoints[this.props.match.params.id])
     .then(response => response.json())
     .then(data => {
@@ -28,16 +30,11 @@ export default class Weather extends React.Component {
       })
     })
   }
+
   componentDidUpdate() {
-    fetch(API_URL + endpoints[this.props.match.params.id])
-    .then(response => response.json())
-    .then(data => {
-      this.setState({
-        places: data.current_observation,
-        names: data.current_observation.display_location
-      })
-    })
+    this.getWeather();
   }
+
   render() {
     let place = this.state.places;
     let name = this.state.names;
@@ -45,7 +42,7 @@ export default class Weather extends React.Component {
     return (
       <div className="text-center">
         <div className="weather-icon">
-          <h2 className="city">{name.city}</h2>
+          <h2 className="city">{name.full}</h2>
           <img src={place.icon_url} />
           <p>{place.weather}</p>
         </div>
