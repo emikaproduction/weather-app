@@ -1,0 +1,16 @@
+#ignore Mac OSX files
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+npm-debug.log*
+node_modules
+
+# Generated js bundles
+/app/assets/webpack/*
+yarn-error.log
