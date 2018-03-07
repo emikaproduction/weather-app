@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <h3>Home page - Wybierz miasto</h3>
+        <h3>Choose a city</h3>
       </div>
     );
   }

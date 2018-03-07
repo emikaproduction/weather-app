@@ -1,0 +1,17 @@
+.weather-icon {
+  background-color: grey;
+  padding: 10px;
+  color: white;
+  .city {
+
+  }
+  img {
+    height: auto;
+    width: 150px;
+    background: white;
+    border-radius: 99px;
+    padding: 20px;
+    color: black;
+    box-shadow: 5px 10px;
+  }
+}
