@@ -28,10 +28,13 @@ export default class Weather extends React.Component {
         places: data.current_observation,
         names: data.current_observation.display_location
       })
-    })
+    });
   }
 
-  componentDidUpdate() {
+  componentDidMount() {
+    this.getWeather();
+  }
+  componentWillUpdate() {
     this.getWeather();
   }
 
