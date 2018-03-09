@@ -8,7 +8,8 @@ export default class Logo extends React.Component {
       max: 25,
       speed: 400,
       glare: true,
-      'max-glare': 0.5,
+      scale: 1.2,
+      'max-glare': 1,
     })
   }
 

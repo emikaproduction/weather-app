@@ -9,7 +9,7 @@ import Weather from "./Weather/Weather";
 const BasicExample = () => (
   <Router>
     <div className="navbar">
-      <Logo title="Weather APP"/>
+      <Link to="/"><Logo title="Weather APP"/></Link>
       <ul>
         <li>
           <Link to="/weather/los_angeles">Los Angeles</Link>

@@ -20,9 +20,9 @@ export default class Weather extends React.Component {
   }
 
   getWeather(props) {
-    this.state = {
+    this.setState({
       loading: true
-    };
+    });
     fetch(API_URL + endpoints[props.match.params.id])
     .then(response => response.json())
     .then(data => {

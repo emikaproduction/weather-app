@@ -11,9 +11,11 @@ module.exports = {
   entry: './client/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: 'index_bundle.js',
+    publicPath: '/'
   },
   performance: { hints: false },
+  devServer: { historyApiFallback: true },
   module: {
     rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
@@ -29,5 +31,5 @@ module.exports = {
       { test: /\.(gif|svg|jpg|png)$/, loader: "file-loader" }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [ HtmlWebpackPluginConfig ]
 }

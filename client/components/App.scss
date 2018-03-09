@@ -1,7 +1,10 @@
-$green : rgba(200,173,42, .5);
+$light_blue : #028090;
 
 .navbar {
   text-align: center;
+  a {
+    text-decoration: none;
+  }
   ul {
     padding: 0;
     li {
@@ -10,16 +13,18 @@ $green : rgba(200,173,42, .5);
         display: inline-flex;
         margin: 0 15px;
         padding: 10px 15px;
-        border: 1px solid $green;
+        border: 1px solid $light_blue;
+        color: $light_blue;
         text-decoration: none;
+        border-radius: 5px;
         transition: all .3s;
         &:hover {
-          background-color: $green;
+          background-color: $light_blue;
           color: white;
         }
         &:active,
         &:focus {
-          background-color: $green;
+          background-color: $light_blue;
           color: white;
         }
       }
