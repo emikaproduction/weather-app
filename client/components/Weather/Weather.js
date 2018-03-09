@@ -15,7 +15,6 @@ export default class Weather extends React.Component {
 
     this.state = {
       places: [],
-      names: [],
       loading: true
     };
   }
@@ -29,7 +28,6 @@ export default class Weather extends React.Component {
     .then(data => {
       this.setState({
         places: data.current_observation,
-        names: data.current_observation.display_location,
         loading: false
       })
     });
@@ -45,7 +43,6 @@ export default class Weather extends React.Component {
 
   render() {
     let place = this.state.places;
-    let name = this.state.names;
 
     if (this.state.loading) {
       return (
@@ -59,7 +56,7 @@ export default class Weather extends React.Component {
       return (
         <div className="text-center">
           <div className="weather-box">
-            <h2 className="city">{name.full}</h2>
+            <h2 className="city">{place.display_location.full}</h2>
             <div className="weather-info">
               <div className="place-icon">
                 <img src={place.icon_url} />
