@@ -3,8 +3,18 @@
   padding: 10px;
   color: white;
   height: 250px;
+  .city {
+    -webkit-animation-name: show;
+    -webkit-animation-duration: .7s;
+    animation-name: show;
+    animation-duration: .7s;
+  }
   .weather-info {
     display: inline-flex;
+    -webkit-animation-name: show;
+    -webkit-animation-duration: .7s;
+    animation-name: show;
+    animation-duration: .7s;
     .place-icon {
       margin: 0 auto 50px;
       height: 100px;
@@ -24,27 +34,13 @@
       margin-left: 45px;
     }
   }
-  .loading {
-    opacity: 0;
-    -webkit-animation-name: show;
-    -webkit-animation-duration: 3s;
-    animation-name: show;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  }
 }
 
 @-webkit-keyframes show {
   0%   {opacity: 0;}
-  25%  {opacity: .5;}
-  50%  {opacity: 1;}
-  75%  {opacity: .5;}
-  100% {opacity: 0}
+  100% {opacity: 1}
 }
 @keyframes rotate {
   0%   {opacity: 0;}
-  25%  {opacity: .5;}
-  50%  {opacity: 1;}
-  75%  {opacity: .5;}
-  100% {opacity: 0}
+  100% {opacity: 1}
 }
