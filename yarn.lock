@@ -2385,6 +2385,13 @@ figures@^2.0.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
+file-loader@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/file-loader/-/file-loader-1.1.11.tgz#6fe886449b0f2a936e43cabaac0cdbfb369506f8"
+  dependencies:
+    loader-utils "^1.0.2"
+    schema-utils "^0.4.5"
+
 filename-regex@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/filename-regex/-/filename-regex-2.0.1.tgz#c1c4b9bee3e09725ddb106b75c1e301fe2f18b26"
@@ -5684,7 +5691,7 @@ sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-schema-utils@^0.4.2, schema-utils@^0.4.3:
+schema-utils@^0.4.2, schema-utils@^0.4.3, schema-utils@^0.4.5:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.5.tgz#21836f0608aac17b78f9e3e24daff14a5ca13a3e"
   dependencies:
@@ -6594,6 +6601,10 @@ validate-npm-package-license@^3.0.1:
 value-equal@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/value-equal/-/value-equal-0.4.0.tgz#c5bdd2f54ee093c04839d71ce2e4758a6890abc7"
+
+vanilla-tilt@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/vanilla-tilt/-/vanilla-tilt-1.4.1.tgz#7dae5fe5904c160140b92e586a1ddd81c93bc4a9"
 
 vary@~1.1.2:
   version "1.1.2"

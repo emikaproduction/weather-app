@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.scss';
+import VanillaTilt from './VanillaTilt';
 
 import Home from "./Home";
 import Weather from "./Weather";
@@ -8,7 +9,7 @@ import Weather from "./Weather";
 const BasicExample = () => (
   <Router>
     <div className="navbar">
-      <h1 className="title-page">Weather APP</h1>
+      <VanillaTilt title="Weather APP"/>
       <ul>
         <li>
           <Link to="/weather/los_angeles">Los Angeles</Link>

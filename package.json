@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.4",
     "node-sass": "^4.7.2",
     "path": "^0.12.7",
@@ -15,6 +16,7 @@
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2",
+    "vanilla-tilt": "^1.4.1",
     "webpack": "^4.1.0",
     "webpack-dev-server": "^3.1.0"
   },

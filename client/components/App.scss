@@ -2,23 +2,26 @@ $green : rgba(200,173,42, .5);
 
 .navbar {
   text-align: center;
-  li {
-    display: inline-flex;
-    a {
+  ul {
+    padding: 0;
+    li {
       display: inline-flex;
-      margin: 0 15px;
-      padding: 10px 15px;
-      border: 1px solid $green;
-      text-decoration: none;
-      transition: all .3s;
-      &:hover {
-        background-color: $green;
-        color: white;
-      }
-      &:active,
-      &:focus {
-        background-color: $green;
-        color: white;
+      a {
+        display: inline-flex;
+        margin: 0 15px;
+        padding: 10px 15px;
+        border: 1px solid $green;
+        text-decoration: none;
+        transition: all .3s;
+        &:hover {
+          background-color: $green;
+          color: white;
+        }
+        &:active,
+        &:focus {
+          background-color: $green;
+          color: white;
+        }
       }
     }
   }

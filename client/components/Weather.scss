@@ -1,17 +1,44 @@
-.weather-icon {
+.weather-box {
   background-color: grey;
   padding: 10px;
   color: white;
-  .city {
+  height: 250px;
+  .place-icon {
+    margin: 0 auto 50px;
+    height: 100px;
+    width: 100px;
+    img {
+      height: 100%;
+      width: 100%;
+      padding: 15px;
+      margin-left: -15px;
+      background: white;
+      border-radius: 99px;
+      color: black;
+      box-shadow: 5px 10px;
+    }
+  }
+  .loading {
+    opacity: 0;
+    -webkit-animation-name: show;
+    -webkit-animation-duration: 3s;
+    animation-name: show;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
 
-  }
-  img {
-    height: auto;
-    width: 150px;
-    background: white;
-    border-radius: 99px;
-    padding: 20px;
-    color: black;
-    box-shadow: 5px 10px;
-  }
+@-webkit-keyframes show {
+  0%   {opacity: 0;}
+  25%  {opacity: .5;}
+  50%  {opacity: 1;}
+  75%  {opacity: .5;}
+  100% {opacity: 0}
+}
+@keyframes rotate {
+  0%   {opacity: 0;}
+  25%  {opacity: .5;}
+  50%  {opacity: 1;}
+  75%  {opacity: .5;}
+  100% {opacity: 0}
 }
