@@ -60,13 +60,17 @@ export default class Weather extends React.Component {
         <div className="text-center">
           <div className="weather-box">
             <h2 className="city">{name.full}</h2>
-            <div className="place-icon">
-              <img src={place.icon_url} />
+            <div className="weather-info">
+              <div className="place-icon">
+                <img src={place.icon_url} />
+              </div>
+              <div className="place-info">
+                <p>{place.weather}</p>
+                <h2>{place.temp_c} °C</h2>
+                <h2>{place.temp_f} °F</h2>
+              </div>
             </div>
-            <p>{place.weather}</p>
           </div>
-          <h2>{place.temp_c} °C</h2>
-          <h2>{place.temp_f} °F</h2>
         </div>
       )
     }

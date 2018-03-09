@@ -1,8 +1,8 @@
 import React from 'react';
 import VanillaTilt from 'vanilla-tilt';
-import './VanillaTilt.scss';
+import './Logo.scss';
 
-export default class Tilt extends React.Component {
+export default class Logo extends React.Component {
   componentDidMount() {
     VanillaTilt.init(this.rootNode, {
       max: 25,

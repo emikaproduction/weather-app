@@ -5,7 +5,7 @@ import {
   Link
 } from 'react-router-dom';
 
-import Weather from "./Weather";
+import Weather from "./Weather/Weather";
 
 export default class App extends Component {
   render() {

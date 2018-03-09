@@ -3,19 +3,25 @@
   padding: 10px;
   color: white;
   height: 250px;
-  .place-icon {
-    margin: 0 auto 50px;
-    height: 100px;
-    width: 100px;
-    img {
-      height: 100%;
-      width: 100%;
-      padding: 15px;
-      margin-left: -15px;
-      background: white;
-      border-radius: 99px;
-      color: black;
-      box-shadow: 5px 10px;
+  .weather-info {
+    display: inline-flex;
+    .place-icon {
+      margin: 0 auto 50px;
+      height: 100px;
+      width: 100px;
+      img {
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        margin-left: -15px;
+        background: white;
+        border-radius: 99px;
+        color: black;
+        box-shadow: 5px 10px;
+      }
+    }
+    .place-info {
+      margin-left: 45px;
     }
   }
   .loading {

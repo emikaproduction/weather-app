@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.scss';
-import VanillaTilt from './VanillaTilt';
+import Logo from './Logo/Logo';
 
 import Home from "./Home";
-import Weather from "./Weather";
+import Weather from "./Weather/Weather";
 
 const BasicExample = () => (
   <Router>
     <div className="navbar">
-      <VanillaTilt title="Weather APP"/>
+      <Logo title="Weather APP"/>
       <ul>
         <li>
           <Link to="/weather/los_angeles">Los Angeles</Link>
